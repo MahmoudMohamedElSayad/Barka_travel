@@ -1,0 +1,132 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:fontFamily">@font/janna</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:background">@drawable/gradient_btn_red_shape</item>
+        <item name="android:layout_marginStart">@dimen/_70sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_70sdp</item>
+<!--        <item name="android:layout_marginTop">@dimen/_12sdp</item>-->
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="LoginAndSignUpTextView">
+        <item name="android:fontFamily">@font/lemon2</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="LoginAndSignUpBlueTextView">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+    </style>
+    <style name="EditTextLogin">
+        <item name="android:fontFamily">@font/janna</item>
+        <item name="android:textColorHint">@color/gray_text_color</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/_6ssp</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+    <style name="SpinnerBooking">
+        <item name="android:fontFamily">@font/janna</item>
+        <item name="android:textColorHint">@color/gray_text_color</item>
+        <item name="android:textColor">@color/gray_text_color</item>
+        <item name="android:padding">@dimen/_6ssp</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+    <style name="text_input_login">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray_text_color</item>
+        <item name="android:layout_marginTop">@dimen/_25sdp</item>
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:background">@color/gray2</item>
+    </style>
+    <style name="text_input_booking">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray_text_color</item>
+        <item name="android:layout_marginTop">@dimen/_12sdp</item>
+        <item name="android:layout_marginStart">@dimen/_10sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_10sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:background">@color/gray2</item>
+    </style>
+    <style name="error_appearance">
+        <item name="android:textColor">@color/txt_color_red</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColorHighlight">@color/txt_color_red</item>
+        <item name="android:textColorHint">@color/txt_color_red</item>
+        <item name="android:textColorLink">@color/txt_color_red</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="search_text_input">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/_25sdp</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+    </style>
+    <style name="search_text_input2">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+    </style>
+    <style name="EditTextSearch">
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:padding">@dimen/_1ssp</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+    <style name="view_style">
+        <item name="android:background">@color/gray_text_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="MoreText">
+        <item name="android:layout_marginStart">@dimen/_8sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_8sdp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textColor">@color/gray66</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MoreConstrainLay">
+        <item name="android:layout_marginStart">@dimen/_10sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_10sdp</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:background">@drawable/gradient_btn_gray_flight_offer_shape</item>
+    </style>
+
+    <style name="rating" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>
+

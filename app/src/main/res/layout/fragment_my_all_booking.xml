@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:elevation="@dimen/_5sdp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fragment_my_all_booking_name_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_umrah_bookings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginStart="@dimen/_60sdp"
+                android:elevation="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/fragment_my_all_booking_back_img"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:elevation="@dimen/_5sdp"
+                android:background="@drawable/gray_shape_trangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_6sdp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+            >
+
+            <com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/fragment_my_all_booking_s_fl_shimmer_donations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--                                <include layout="@layout/cardview_general_vert_hajj_and_hotels_item" />-->
+                    <!--                <include layout="@layout/cardview_notifications_item" />-->
+                    <!--                <include layout="@layout/cardview_notifications_item" />-->
+                    <!--                <include layout="@layout/cardview_notifications_item" />-->
+                    <!--                <include layout="@layout/cardview_notifications_item" />-->
+                    <!--                <include layout="@layout/cardview_notifications_item" />-->
+                    <!--                <include layout="@layout/cardview_notifications_item" />-->
+
+
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/fragment_my_all_booking_sr_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/fragment_my_all_booking_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/load_more"
+                            android:scrollbars="vertical" />
+
+                        <include
+                            layout="@layout/cardview_item_load_more"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true" />
+
+                        <include layout="@layout/error" />
+                        <!--                    <include layout="@layout/cardview_general_vert_hajj_and_hotels_item" />-->
+                        <include layout="@layout/not_found_result_error" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    <RadioGroup-->
+<!--        android:checkedButton="@+id/up_coming"-->
+<!--        android:id="@+id/toggle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_28sdp"-->
+<!--        android:layout_marginLeft="@dimen/_12sdp"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:layout_marginRight="@dimen/_12sdp"-->
+<!--        android:background="@drawable/pink_out_line"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <RadioButton-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:layout_marginLeft="1dp"-->
+<!--            android:id="@+id/up_coming"-->
+<!--            android:background="@drawable/toggle_widget_background"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:button="@null"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/up_coming"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <RadioButton-->
+<!--            android:layout_marginRight="1dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:id="@+id/completed"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/toggle_widget_background"-->
+<!--            android:button="@null"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/completed"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </RadioGroup>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_25sdp"-->
+<!--            android:layout_marginBottom="-5dp"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:id="@+id/tx34"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="This Month"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginStart="@dimen/_12sdp"-->
+<!--                android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_13ssp" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tx64"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="23 Days left"-->
+<!--                android:layout_marginStart="@dimen/_3sdp"-->
+<!--                android:layout_marginEnd="@dimen/_3sdp"-->
+<!--                android:textColor="@color/gray_text_color"-->
+<!--                android:textSize="@dimen/_13ssp" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="@dimen/_12sdp"-->
+<!--            android:background="@drawable/gradient_item_details_blue_shape"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="@dimen/_12sdp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/name2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_3sdp"-->
+<!--                android:layout_marginEnd="@dimen/_13sdp"-->
+<!--                android:elevation="@dimen/_5sdp"-->
+<!--                android:text="Luxury Umrah BookingPackage"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="@dimen/_15ssp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/logo"-->
+<!--                    android:layout_width="@dimen/_45sdp"-->
+<!--                    android:layout_height="@dimen/_19sdp"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginTop="@dimen/_18sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                    android:elevation="@dimen/_1sdp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/logo2" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/cardview_general_vert_hajj_and_hotels_item_additional_part"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_20sdp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tx2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="13 sep"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/_12ssp" />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/arrow"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:src="@drawable/ic_trending_flat_white_24dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tx4"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="19 sep"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/_12ssp" />-->
+<!--                </LinearLayout>-->
+<!--            </FrameLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_20sdp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:weightSum="4">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingStart="@dimen/_5sdp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_20sdp"-->
+<!--                        android:layout_height="@dimen/_20sdp"-->
+<!--                        android:src="@drawable/ic_access_time_black_24dp"-->
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_6sdp"-->
+<!--                        android:text="@string/duration"-->
+<!--                        android:textColor="@color/gray_text_color"-->
+<!--                        android:textSize="@dimen/_12ssp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:text="12 Nights"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/_12ssp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingStart="@dimen/_5sdp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_20sdp"-->
+<!--                        android:layout_height="@dimen/_20sdp"-->
+<!--                        android:src="@drawable/makkah"-->
+<!--                        android:drawableStart="@drawable/makkah" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_5sdp"-->
+<!--                        android:text="@string/makkah"-->
+<!--                        android:textColor="@color/gray_text_color"-->
+<!--                        android:textSize="@dimen/_12ssp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:text="6 Nights"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/_12ssp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingStart="@dimen/_5sdp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_20sdp"-->
+<!--                        android:layout_height="@dimen/_20sdp"-->
+<!--                        android:src="@drawable/madinah2"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_5sdp"-->
+<!--                        android:text="@string/madinah"-->
+<!--                        android:textColor="@color/gray_text_color"-->
+<!--                        android:textSize="@dimen/_12ssp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:text="6 Nights"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/_12ssp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingStart="@dimen/_5sdp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:drawableEnd="@drawable/ic_rate_gray_star"-->
+<!--                        android:drawablePadding="@dimen/_3sdp"-->
+<!--                        android:text="5"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/gray_text_color"-->
+<!--                        android:textSize="@dimen/_16sdp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_5sdp"-->
+<!--                        android:text="@string/category"-->
+<!--                        android:textColor="@color/gray_text_color"-->
+<!--                        android:textSize="@dimen/_12ssp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:text="Luxury"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/_12ssp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="@dimen/_15sdp"-->
+<!--            android:layout_marginStart="@dimen/_15sdp"-->
+<!--            android:paddingTop="@dimen/_17sdp"-->
+<!--            android:paddingBottom="@dimen/_17sdp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:elevation="@dimen/_10sdp"-->
+<!--            android:weightSum="2"-->
+<!--            android:background="@drawable/white_shape"-->
+<!--            >-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/adults"-->
+<!--                    android:paddingTop="@dimen/_3sdp"-->
+<!--                    android:drawableStart="@drawable/ic_account_gray_24dp"-->
+<!--                    android:drawablePadding="@dimen/_10sdp"-->
+<!--                    android:textColor="@color/gray66"-->
+<!--                    android:textSize="@dimen/_12ssp" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="2"-->
+<!--                    android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                    android:layout_marginStart="@dimen/_15sdp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/Rooms"-->
+<!--                    android:drawableStart="@drawable/ic_hotel_gray_24dp"-->
+<!--                    android:drawablePadding="@dimen/_10sdp"-->
+<!--                    android:textColor="@color/gray66"-->
+<!--                    android:paddingTop="@dimen/_3sdp"-->
+<!--                    android:textSize="@dimen/_12ssp" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1"-->
+<!--                    android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                    android:layout_marginStart="@dimen/_15sdp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

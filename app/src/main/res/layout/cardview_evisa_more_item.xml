@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/golds"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@android:color/white"
+        android:foreground="?selectableItemBackground">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_6sdp"
+            android:background="@color/gray2"
+            android:gravity="center"
+            android:elevation="@dimen/_5sdp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passport"
+                        android:textColor="@color/gray"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12ssp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/cardview_evisa_more_item_passport_photo_img"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/my_umrah_booking" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal"
+                        android:textColor="@color/gray"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12ssp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/cardview_evisa_more_item_personal_photo_img"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/haj" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/cardview_evisa_static_item_passport_price_tv"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/bngladish_price"-->
+            <!--                android:textColor="@color/red"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_marginTop="@dimen/_14sdp"-->
+            <!--                android:textSize="@dimen/_13ssp"-->
+            <!--                />-->
+
+            <TextView
+                android:id="@+id/cardview_evisa_more_item_passport_Type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passport Type	: Passport Type"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/cardview_evisa_static_item_padding_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:visibility="gone"
+        />
+</LinearLayout>

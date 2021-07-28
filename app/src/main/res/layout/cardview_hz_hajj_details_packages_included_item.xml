@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:paddingTop="@dimen/_4sdp"
+    android:paddingBottom="@dimen/_4sdp"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/cardview_hz_hajj_details_packages_included_item_img"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/visa_passport"
+         />
+    <TextView
+        android:id="@+id/cardview_hz_hajj_details_packages_included_item_name_tv"
+        android:layout_width="@dimen/_100sdp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp" />
+</LinearLayout>

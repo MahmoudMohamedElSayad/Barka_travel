@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/golds"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_home_flights_cardview_flight_evisa_item_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@android:color/white"
+        android:foreground="?selectableItemBackground">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_6sdp"
+            android:background="@color/gray2"
+            android:gravity="center"
+            android:elevation="@dimen/_5sdp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                >
+
+                <ImageView
+                    android:id="@+id/cardview_evisa_static_item_photo_img"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/us1" />
+                <ImageView
+                    android:id="@+id/cardview_evisa_static_item_passport_img"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/pak_india" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cardview_evisa_static_item_passport_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bngiladish_Passport"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textSize="@dimen/_13ssp"
+                />
+
+            <TextView
+                android:id="@+id/cardview_evisa_static_item_passport_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bngladish_price"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textSize="@dimen/_13ssp"
+                />
+            <TextView
+                android:id="@+id/cardview_evisa_static_item_passport_year_vaild_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bngladish_year_validaty"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textSize="@dimen/_13ssp"
+                />
+            <TextView
+                android:id="@+id/cardview_evisa_static_item_passport_visa_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bngladish_visa_time"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp"
+                />
+
+                </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/cardview_evisa_static_item_padding_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:visibility="gone"
+        />
+</LinearLayout>
