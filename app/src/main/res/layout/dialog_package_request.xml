@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_20sdp"
+
+        app:cardCornerRadius="@dimen/_16sdp">
+<!--        android:layout_marginStart="@dimen/_30sdp"-->
+<!--        android:layout_marginEnd="@dimen/_30sdp"-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/item_sign_out_dialog_btn_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:elevation="3dp"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/package_requests"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:elevation="3dp"
+                android:textSize="@dimen/_11sdp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="How can we help you?"
+                />
+            <ImageView
+                style="@style/view_style"
+                android:layout_marginTop="@dimen/_13sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:elevation="3dp"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:text="@string/I_want_to_make_change"
+                />
+            <ImageView
+                style="@style/view_style"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:elevation="3dp"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center"
+                android:textColor="@color/txt_color_red"
+                android:text="@string/Request_a_refund"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

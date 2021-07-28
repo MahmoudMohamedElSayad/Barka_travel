@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_discover"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/discover" />
+    <item
+        android:id="@+id/navigation_hajj"
+        android:icon="@drawable/kaaba"
+        android:title="@string/hajj_and_umrah" />
+<!--    <item-->
+<!--        android:id="@+id/navigation_umrah"-->
+<!--        android:icon="@drawable/kaaba"-->
+<!--        android:title="@string/umrah" />-->
+    <item
+        android:id="@+id/navigation_flight"
+        android:icon="@drawable/ic_flight_black_24dp"
+        android:title="@string/flight" />
+    <item
+        android:id="@+id/navigation_hotels"
+        android:icon="@drawable/ic_hotel_black_24dp"
+        android:title="@string/hotels" />
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account_black_24dp"
+        android:title="@string/title_account" />
+
+</menu>

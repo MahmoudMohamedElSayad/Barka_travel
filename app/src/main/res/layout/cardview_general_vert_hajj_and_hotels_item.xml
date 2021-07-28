@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_13sdp"
+    android:paddingEnd="@dimen/_13sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    >
+    <TextView
+        android:id="@+id/cardview_general_vert_hajj_and_hotels_item_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/top_umrah_packages"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_10sdp"
+        style="@style/LoginAndSignUpTextView"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp"
+        >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_image"
+        >
+
+    <ImageView
+        android:id="@+id/cardview_general_vert_hajj_and_hotels_item_hotel_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_95sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/haj"
+      />
+        <ImageView
+            android:id="@+id/cardview_general_vert_hajj_and_hotels_item_offer_shadow_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:background="@drawable/offer_white_shape"
+            android:src="@drawable/ic_whatshot_black_24dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center"
+            >
+
+        <TextView
+            android:id="@+id/cardview_general_vert_hajj_and_hotels_item_tv_rate_and_nights_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="11 Nights"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+<!--            4.2 11 Nights-->
+<!--        android:drawablePadding="@dimen/_4sdp"-->
+<!--        android:drawableEnd="@drawable/ic_rate"-->
+            <ImageView
+                android:id="@+id/cardview_general_vert_hajj_and_hotels_item_rate_img"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:src="@drawable/ic_rate" />
+        </LinearLayout>
+    </FrameLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_6sdp"
+        >
+        <TextView
+            android:id="@+id/cardview_general_vert_hajj_and_hotels_item_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 787"
+            android:textColor="@color/txt_color_red"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            />
+        <TextView
+            android:id="@+id/cardview_general_vert_hajj_and_hotels_item_nights_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/night"
+            android:visibility="visible"
+            android:textColor="@color/gray_text_color" />
+        <LinearLayout
+            android:id="@+id/cardview_general_vert_hajj_and_hotels_item_additional_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="visible"
+            >
+            <TextView
+                android:id="@+id/cardview_general_vert_hajj_and_hotels_item_from_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="13 sep"
+                android:textColor="@color/graydate" />
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:src="@drawable/ic_trending_flat_black_24dp" />
+            <TextView
+                android:id="@+id/cardview_general_vert_hajj_and_hotels_item_to_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="19 sep"
+                android:textColor="@color/graydate" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/cardview_general_vert_hajj_and_hotels_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Madinah Movenpick Hotel"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        />
+</LinearLayout>

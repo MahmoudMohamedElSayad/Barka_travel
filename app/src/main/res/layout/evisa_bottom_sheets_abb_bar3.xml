@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.HomeCycleActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main Content -->
+    <include layout="@layout/fragment_my_all_booking" />
+
+    <!-- Bottom Sheet Content -->
+    <include layout="@layout/content_bottom_sheet"
+        android:id="@+id/bottom1"
+        />
+<!--    <include layout="@layout/location_bottom_sheet"-->
+<!--        android:id="@+id/bottom2"-->
+<!--        />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="@dimen/_5sdp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragment_about_us_name_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_baraka_uSA"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:elevation="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <ImageButton
+            android:id="@+id/fragment_policy_and_conditions_back_img"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:elevation="@dimen/_5sdp"
+            android:background="@drawable/gray_shape_trangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_6sdp"
+                android:orientation="vertical"
+                android:background="@drawable/white_shape"
+                >
+                <TextView
+                    android:id="@+id/fragment_about_us_about_about_us_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Welcome to Baraka Travel , It's Our Honor To Serve Pilgrims"
+                    android:layout_gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_13ssp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hi_about_us"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+                <TextView
+                    android:id="@+id/fragment_about_us_about_us_description_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:visibility="visible"
+                    android:text="@string/ans10"
+                    android:textColor="@color/gray66"
+                    android:textSize="@dimen/_11ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_6sdp"
+                android:orientation="vertical"
+                android:background="@drawable/white_shape"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ADDRESS_CONTACT_INFO"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+                <TextView
+                    android:id="@+id/fragment_about_us_about_barka_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/hi_about_us"
+                    android:textColor="@color/gray66"
+                    android:textSize="@dimen/_11ssp" />
+                <TextView
+                    android:id="@+id/fragment_about_us_about_barka_phone1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/hi_about_us"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_11ssp" />
+                <TextView
+                    android:id="@+id/fragment_about_us_about_barka_phone2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/hi_about_us"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_11ssp" />
+                <TextView
+                    android:id="@+id/fragment_about_us_about_barka_phone3_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/hi_about_us"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_11ssp" />
+                <TextView
+                    android:id="@+id/fragment_about_us_about_barka_email_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableStart="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/hi_about_us"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_11ssp" />
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    android:background="@drawable/white_shape"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/location"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+                    <!--                <com.google.android.gms.maps.MapView-->
+                    <!--                    android:id="@+id/fragment_luxury_umrah_package_mv_map"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="@dimen/_140sdp"-->
+                    <!--                    android:layout_marginTop="@dimen/_8sdp"-->
+                    <!--                    android:elevation="@dimen/_3sdp"-->
+                    <!--                    />-->
+
+                    <WebView
+                        android:id="@+id/fragment_about_us_wv_mv_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_145sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:elevation="@dimen/_3sdp"
+                        />
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_6sdp"
+                android:orientation="vertical"
+                android:background="@drawable/white_shape"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BARAKA_TRAVEL_AGENCY"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+                <TextView
+                    android:id="@+id/fragment_about_us_about_barka_agency_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="@string/hi_about_us"
+                    android:textColor="@color/gray66"
+                    android:textSize="@dimen/_11ssp" />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

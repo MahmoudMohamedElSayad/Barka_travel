@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_2sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_2sdp"
+    android:orientation="vertical"
+  >
+
+
+
+        <TextView
+            android:id="@+id/home_discover_fragment_sub_home_rv_item_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/top_hotels_packages"
+            android:textSize="@dimen/_16ssp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/_5sdp"
+            style="@style/LoginAndSignUpTextView"
+            />
+    <TextView
+        android:id="@+id/home_discover_fragment_sub_home__name2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="products"
+        android:visibility="gone"
+        android:textSize="@dimen/_11ssp"
+        android:fontFamily="@font/lemon2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        <ScrollView
+            android:id="@+id/home_discover_fragment_sub_home_rv_item_hz_sr_vw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_8sdp"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_discover_fragment_sub_home_rv_item_hz_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                tools:layoutManager="GridLayoutManager"
+                tools:spanCount="5"
+               />
+        </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_discover_fragment_sub_home_rv_item_vr_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/load_more"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:scrollbars="vertical" />
+    <TextView
+        android:id="@+id/sub_home_verv_item_padding_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:visibility="gone"
+        />
+    <include layout="@layout/home_sub_hz_rv_item2"/>
+</LinearLayout>

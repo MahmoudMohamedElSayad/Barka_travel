@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_5sdp"
+    android:paddingEnd="@dimen/_5sdp"
+    android:paddingTop="@dimen/_2sdp"
+    android:paddingBottom="@dimen/_4sdp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_6sdp"
+            android:background="@color/gray2"
+            >
+        <TextView
+            android:id="@+id/cardview_ques_and_answer_item_ques_tv"
+            android:layout_width="@dimen/_265sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/ques10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+            <TextView
+                android:id="@+id/cardview_ques_and_answer_item_show_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="+"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_19sdp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cardview_ques_and_answer_item_ans_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:visibility="gone"
+            android:text="@string/ans10"
+            android:textColor="@color/gray66"
+            android:textSize="@dimen/_11ssp" />
+
+    </LinearLayout>
+</LinearLayout>

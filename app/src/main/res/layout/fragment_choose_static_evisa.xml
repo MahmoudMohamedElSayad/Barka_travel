@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:elevation="@dimen/_5sdp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/my_umrah_bookings"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_15ssp"-->
+<!--                android:layout_marginStart="@dimen/_60sdp"-->
+<!--                android:elevation="@dimen/_5sdp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                />-->
+            <ImageButton
+                android:id="@+id/fragment_choose_static_evisa_back_btn"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:elevation="@dimen/_5sdp"
+                android:background="@drawable/gray_shape_trangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_choose_static_evisa_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/load_more"
+                android:scrollbars="vertical" />
+
+
+            <!--            <RadioGroup-->
+<!--                android:checkedButton="@+id/up_coming"-->
+<!--                android:id="@+id/toggle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_28sdp"-->
+<!--                android:layout_marginLeft="@dimen/_12sdp"-->
+<!--                android:layout_marginTop="@dimen/_15sdp"-->
+<!--                android:layout_marginRight="@dimen/_12sdp"-->
+<!--                android:background="@drawable/pink_out_line"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <RadioButton-->
+<!--                    android:layout_marginTop="1dp"-->
+<!--                    android:layout_marginBottom="1dp"-->
+<!--                    android:layout_marginLeft="1dp"-->
+<!--                    android:id="@+id/up_coming"-->
+<!--                    android:background="@drawable/toggle_widget_background"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:button="@null"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/my_cards"-->
+<!--                    android:textColor="@color/black" />-->
+
+<!--                <RadioButton-->
+<!--                    android:layout_marginRight="1dp"-->
+<!--                    android:layout_marginTop="1dp"-->
+<!--                    android:layout_marginBottom="1dp"-->
+<!--                    android:id="@+id/completed"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/toggle_widget_background"-->
+<!--                    android:button="@null"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/Transactions"-->
+<!--                    android:textColor="@color/black" />-->
+<!--            </RadioGroup>-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/cons3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_27sdp"-->
+<!--                android:layout_marginStart="@dimen/_12sdp"-->
+<!--                android:layout_marginEnd="@dimen/_12sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/_8sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_8sdp"-->
+<!--                    android:src="@drawable/edit_icon"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_marginStart="@dimen/_1sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_1sdp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_44sdp"-->
+<!--                        android:layout_height="@dimen/_36sdp"-->
+<!--                        android:src="@drawable/visa"-->
+<!--                       />-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/_15sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                    android:orientation="vertical"-->
+<!--              >-->
+
+<!--                    <TextView-->
+<!--                        style="@style/MoreText"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Saved Card 1" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/_8sdp"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_8sdp"-->
+<!--                        android:text="XXXX - XXXX - 1228"-->
+<!--                        android:textSize="@dimen/_10ssp" />-->
+<!--                </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            <ImageView-->
+<!--                style="@style/view_style"-->
+<!--                android:layout_marginTop="@dimen/_11sdp"-->
+<!--                android:layout_marginStart="@dimen/_12sdp"-->
+<!--                android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                />-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/cons"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_14sdp"-->
+<!--                android:layout_marginStart="@dimen/_12sdp"-->
+<!--                android:layout_marginEnd="@dimen/_12sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/_8sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_8sdp"-->
+<!--                    android:src="@drawable/edit_icon"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_marginStart="@dimen/_1sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_1sdp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_44sdp"-->
+<!--                        android:layout_height="@dimen/_36sdp"-->
+<!--                        android:src="@drawable/master_card"-->
+<!--                        />-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/_15sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            style="@style/MoreText"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Saved Card 2" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="@dimen/_8sdp"-->
+<!--                            android:layout_marginTop="@dimen/_3sdp"-->
+<!--                            android:layout_marginEnd="@dimen/_8sdp"-->
+<!--                            android:text="XXXX - XXXX - 1421"-->
+<!--                            android:textSize="@dimen/_10ssp" />-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            <ImageView-->
+<!--                style="@style/view_style"-->
+<!--                android:layout_marginTop="@dimen/_11sdp"-->
+<!--                android:layout_marginStart="@dimen/_12sdp"-->
+<!--                android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                />-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/cons4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_75sdp"-->
+<!--                android:layout_marginStart="@dimen/_12sdp"-->
+<!--                android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                android:layout_marginTop="@dimen/_30sdp"-->
+<!--                android:background="@drawable/gradient_btn_gray_get_photo_visa_shape"-->
+<!--                >-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_27sdp"-->
+<!--                    android:layout_height="@dimen/_27sdp"-->
+<!--                    android:src="@drawable/plus_blue"-->
+<!--                    android:layout_marginStart="@dimen/_20sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_20sdp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/add_new_payment_method"-->
+<!--                    android:layout_marginStart="@dimen/_20sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_20sdp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    style="@style/MoreText"-->
+<!--                    />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            <ImageView-->
+<!--                android:id="@+id/logo"-->
+<!--                android:layout_width="@dimen/_40sdp"-->
+<!--                android:layout_height="@dimen/_16sdp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:elevation="@dimen/_1sdp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:layout_marginTop="@dimen/_65sdp"-->
+<!--                android:src="@drawable/logo"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/_17sdp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:elevation="@dimen/_1sdp"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:src="@drawable/all_visa"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/your_transactions_are_secure"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_marginStart="@dimen/_8sdp"-->
+<!--                android:layout_marginEnd="@dimen/_8sdp"-->
+<!--                android:textSize="@dimen/_10ssp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginBottom="@dimen/_10sdp"-->
+<!--                />-->
+</LinearLayout>

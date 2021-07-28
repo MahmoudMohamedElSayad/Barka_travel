@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_discover">
+
+    <fragment
+        android:id="@+id/navigation_discover"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.discover.DiscoverFragment"
+        android:label="fragment_home_discover"
+        tools:layout="@layout/fragment_home_discover" >
+        <action
+            android:id="@+id/action_navigation_discover_to_luxuryUmrahPackageFragment"
+            app:destination="@id/luxuryUmrahPackageFragment" />
+        <action
+            android:id="@+id/action_navigation_discover_to_hottelViewFragment"
+            app:destination="@id/hottelViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_hajj"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.hajj.HujjFragment"
+        android:label="fragment_home_hujj"
+        tools:layout="@layout/fragment_home_hujj" >
+        <action
+            android:id="@+id/action_navigation_hajj_to_navigation_discover"
+            app:destination="@id/navigation_discover" />
+        <action
+            android:id="@+id/action_navigation_hajj_to_navigation_umrah"
+            app:destination="@id/navigation_umrah" />
+        <action
+            android:id="@+id/action_navigation_hajj_to_luxuryUmrahPackageFragment"
+            app:destination="@id/luxuryUmrahPackageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_umrah"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.umrah.UmrahFragment"
+        android:label="fragment_home_umrah"
+        tools:layout="@layout/fragment_home_umrah" >
+        <action
+            android:id="@+id/action_navigation_umrah_to_navigation_hajj"
+            app:destination="@id/navigation_hajj" />
+        <action
+            android:id="@+id/action_navigation_umrah_to_luxuryUmrahPackageFragment"
+            app:destination="@id/luxuryUmrahPackageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_flight"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.flights.FlightsFragment"
+        android:label="fragment_home_flights"
+        tools:layout="@layout/fragment_home_flights" >
+        <action
+            android:id="@+id/action_navigation_flight_to_flightDetailsFragment"
+            app:destination="@id/flightDetailsFragment" />
+        <action
+            android:id="@+id/action_navigation_flight_to_navigation_discover"
+            app:destination="@id/navigation_discover" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_hotels"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.hotels.HottelsFragment"
+        android:label="fragment_home_hottels"
+        tools:layout="@layout/fragment_home_hottels" >
+        <action
+            android:id="@+id/action_navigation_hotels_to_navigation_discover"
+            app:destination="@id/navigation_discover" />
+        <action
+            android:id="@+id/action_navigation_hotels_to_hottelViewFragment"
+            app:destination="@id/hottelViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.AccountFragment"
+        android:label="fragment_home_account_profile"
+        tools:layout="@layout/fragment_home_account_profile" >
+        <action
+            android:id="@+id/action_navigation_account_to_navigation_discover"
+            app:destination="@id/navigation_discover" />
+        <action
+            android:id="@+id/action_navigation_account_to_changeDetailsFragment"
+            app:destination="@id/changeDetailsFragment" />
+        <action
+            android:id="@+id/action_navigation_account_to_myUmrahBookingFragment"
+            app:destination="@id/myUmrahBookingFragment" />
+        <action
+            android:id="@+id/action_navigation_account_to_fragment_choose_static_evisa"
+            app:destination="@id/fragment_choose_static_evisa" />
+        <action
+            android:id="@+id/action_navigation_account_to_changeDetailsMoreFragment"
+            app:destination="@id/changeDetailsMoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flightDetailsFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.flights.FlightDetailsFragment"
+        android:label="fragment_home_flight_details"
+        tools:layout="@layout/fragment_home_flight_details" >
+        <action
+            android:id="@+id/action_flightDetailsFragment_to_navigation_flight"
+            app:destination="@id/navigation_flight" />
+        <action
+            android:id="@+id/action_flightDetailsFragment_to_confirmWithTheSupportFragment3"
+            app:destination="@id/confirmWithTheSupportFragment" />
+        <action
+            android:id="@+id/action_flightDetailsFragment_to_myUmrahBookingFragment"
+            app:destination="@id/myUmrahBookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmWithTheSupportFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.discover.ConfirmWithTheSupportFragment"
+        android:label="fragment_confirm_with_the_support"
+        tools:layout="@layout/fragment_confirm_with_the_support" >
+        <action
+            android:id="@+id/action_confirmWithTheSupportFragment_to_flightDetailsFragment"
+            app:destination="@id/flightDetailsFragment" />
+        <action
+            android:id="@+id/action_confirmWithTheSupportFragment_to_navigation_discover"
+            app:destination="@id/navigation_discover" />
+    </fragment>
+    <fragment
+        android:id="@+id/luxuryUmrahPackageFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.discover.LuxuryUmrahPackageFragment"
+        android:label="fragment_luxury_umrah_package"
+        tools:layout="@layout/fragment_luxury_umrah_package" >
+        <action
+            android:id="@+id/action_luxuryUmrahPackageFragment_to_navigation_discover"
+            app:destination="@id/navigation_discover" />
+        <action
+            android:id="@+id/action_luxuryUmrahPackageFragment_to_hajjAndUmrahBookingFragment"
+            app:destination="@id/hajjAndUmrahBookingFragment" />
+        <action
+            android:id="@+id/action_luxuryUmrahPackageFragment_to_navigation_umrah"
+            app:destination="@id/navigation_umrah" />
+        <action
+            android:id="@+id/action_luxuryUmrahPackageFragment_to_navigation_hajj"
+            app:destination="@id/navigation_hajj" />
+        <action
+            android:id="@+id/action_luxuryUmrahPackageFragment_to_myUmrahBookingFragment"
+            app:destination="@id/myUmrahBookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successfulPaymentFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.discover.SuccessfulPaymentFragment"
+        android:label="fragment_successful_payment"
+        tools:layout="@layout/fragment_successful_payment" >
+        <action
+            android:id="@+id/action_successfulPaymentFragment_to_navigation_discover"
+            app:destination="@id/navigation_discover" />
+        <action
+            android:id="@+id/action_successfulPaymentFragment_to_hajjAndUmrahBookingFragment"
+            app:destination="@id/hajjAndUmrahBookingFragment" />
+        <action
+            android:id="@+id/action_successfulPaymentFragment_to_navigation_account"
+            app:destination="@id/navigation_account" />
+    </fragment>
+    <fragment
+        android:id="@+id/hottelViewFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.hotels.HottelViewFragment"
+        android:label="fragment_home_hottel_view"
+        tools:layout="@layout/fragment_home_hottel_view" >
+        <action
+            android:id="@+id/action_hottelViewFragment_to_confirmWithTheSupportFragment"
+            app:destination="@id/confirmWithTheSupportFragment" />
+        <action
+            android:id="@+id/action_hottelViewFragment_to_navigation_discover"
+            app:destination="@id/navigation_discover" />
+        <action
+            android:id="@+id/action_hottelViewFragment_to_navigation_hotels"
+            app:destination="@id/navigation_hotels" />
+        <action
+            android:id="@+id/action_hottelViewFragment_to_myUmrahBookingFragment"
+            app:destination="@id/myUmrahBookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeDetailsFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.ChangeDetailsFragment"
+        android:label="fragment_change_details"
+        tools:layout="@layout/fragment_change_details" >
+        <action
+            android:id="@+id/action_changeDetailsFragment_to_navigation_account"
+            app:destination="@id/navigation_account" />
+    </fragment>
+    <fragment
+        android:id="@+id/getEVisaFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.GetEVisaFragment"
+        android:label="fragment_get_e_visa"
+        tools:layout="@layout/fragment_get_e_visa" >
+        <action
+            android:id="@+id/action_getEVisaFragment_to_fragment_choose_static_evisa"
+            app:destination="@id/fragment_choose_static_evisa" />
+    </fragment>
+    <fragment
+        android:id="@+id/myUmrahBookingFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.MyAllBookingFragment"
+        android:label="fragment_my_umrah_booking"
+        tools:layout="@layout/fragment_my_all_booking" >
+        <action
+            android:id="@+id/action_myUmrahBookingFragment_to_navigation_account"
+            app:destination="@id/navigation_account" />
+        <action
+            android:id="@+id/action_myUmrahBookingFragment_to_flightDetailsFragment"
+            app:destination="@id/flightDetailsFragment" />
+        <action
+            android:id="@+id/action_myUmrahBookingFragment_to_hottelViewFragment"
+            app:destination="@id/hottelViewFragment" />
+        <action
+            android:id="@+id/action_myUmrahBookingFragment_to_luxuryUmrahPackageFragment"
+            app:destination="@id/luxuryUmrahPackageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeDetailsMoreFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.ChangeDetailsMoreFragment"
+        android:label="fragment_change_more_details"
+        tools:layout="@layout/fragment_change_more_details" >
+        <action
+            android:id="@+id/action_changeDetailsMoreFragment_to_navigation_account"
+            app:destination="@id/navigation_account" />
+        <action
+            android:id="@+id/action_changeDetailsMoreFragment_to_FAQFragment"
+            app:destination="@id/FAQFragment" />
+        <action
+            android:id="@+id/action_changeDetailsMoreFragment_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+        <action
+            android:id="@+id/action_changeDetailsMoreFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+        <action
+            android:id="@+id/action_changeDetailsMoreFragment_to_policyFragment"
+            app:destination="@id/policyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_choose_static_evisa"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.ChooseStaticEVisaFragment"
+        android:label="fragment_payments"
+        tools:layout="@layout/fragment_choose_static_evisa" >
+        <action
+            android:id="@+id/action_fragment_choose_static_evisa_to_getEVisaFragment"
+            app:destination="@id/getEVisaFragment" />
+        <action
+            android:id="@+id/action_fragment_choose_static_evisa_to_navigation_account"
+            app:destination="@id/navigation_account" />
+    </fragment>
+    <fragment
+        android:id="@+id/hajjAndUmrahBookingFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.discover.HajjAndUmrahBookingFragment"
+        android:label="fragment_hajj_and_umrah_booking"
+        tools:layout="@layout/fragment_hajj_and_umrah_booking" >
+        <action
+            android:id="@+id/action_hajjAndUmrahBookingFragment_to_luxuryUmrahPackageFragment"
+            app:destination="@id/luxuryUmrahPackageFragment" />
+        <action
+            android:id="@+id/action_hajjAndUmrahBookingFragment_to_successfulPaymentFragment"
+            app:destination="@id/successfulPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.FAQFragment"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq" >
+        <action
+            android:id="@+id/action_FAQFragment_to_changeDetailsMoreFragment"
+            app:destination="@id/changeDetailsMoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.ContactUsFragment"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" >
+        <action
+            android:id="@+id/action_contactUsFragment_to_changeDetailsMoreFragment"
+            app:destination="@id/changeDetailsMoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" >
+        <action
+            android:id="@+id/action_aboutUsFragment_to_changeDetailsMoreFragment"
+            app:destination="@id/changeDetailsMoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="com.example.barakatravelapp.view.fragment.HomeCycle2.accounts.PolicyFragment"
+        android:label="fragment_policy_and_conditions"
+        tools:layout="@layout/fragment_policy_and_conditions" >
+        <action
+            android:id="@+id/action_policyFragment_to_changeDetailsMoreFragment"
+            app:destination="@id/changeDetailsMoreFragment" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_170sdp"
+    android:layout_height="@dimen/_130sdp"
+    android:id="@+id/cardview_hz_hajj_details_packages_pricing_item_ly"
+    android:layout_marginStart="@dimen/_3sdp"
+    android:layout_marginEnd="@dimen/_12sdp"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/buttonstyl_blue_pricing_item_shap"
+    >
+    <TextView
+        android:id="@+id/cardview_hz_hajj_details_packages_pricing_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photo_gallery"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        >
+        <TextView
+            android:id="@+id/cardview_hz_hajj_details_packages_pricing_item_cost_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 2880"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/cardview_hz_hajj_details_packages_pricing_item_num_ber_room_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 people per room"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        />
+    <Button
+        android:id="@+id/cardview_hz_hajj_details_packages_pricing_item_send_inquiry_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textSize="@dimen/_9ssp"
+        android:background="@drawable/btn_red_shape"
+        android:text="@string/send_inquiry"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        />
+</LinearLayout>
